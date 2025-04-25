@@ -72,8 +72,11 @@ DELETE http://localhost:8080/editoras/{id} — deleta uma editora
 Os endpoints da API foram testados com sucesso utilizando o Postman.
 
 ✅ Cadastro de livros
+
 ✅ Cadastro de editoras
+
 ✅ Listagem e busca de registros
+
 ✅ Relacionamento entre entidades funcionando corretamente
 
 ![image](https://github.com/user-attachments/assets/e52c42eb-c174-423e-8a8b-4b35bfb99ddc)
