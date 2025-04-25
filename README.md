@@ -33,30 +33,47 @@ private Editora editora;
 Com essa anotação, cada livro armazena a chave estrangeira editora_id, representando a editora a que pertence.
 
 🔧 Configuração do Banco de Dados
-Certifique-se de que os serviços Apache e MySQL estejam ativos no XAMPP.
 
 No arquivo application.properties, configure o acesso ao banco de dados:
 ```java
-spring.datasource.url=jdbc:mariadb://localhost:3306/nome_do_banco
-spring.datasource.username=root
-spring.datasource.password=
+spring.datasource.url=jdbc:mariadb://localhost:3306/samuelbanco
+spring.datasource.username=samuelsouto
+spring.datasource.password=12121853
 spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
+spring.devtools.restart.enabled=true
 ```
+📌 Endpoints disponíveis:
+📚 Livros
+GET http://localhost:8080/livros — lista todos os livros
 
-💡 Substitua nome_do_banco pelo nome criado no phpMyAdmin.
+POST http://localhost:8080/livros — cria um novo livro
+
+GET http://localhost:8080/livros/{id} — busca um livro pelo ID
+
+PUT http://localhost:8080/livros/{id} — atualiza um livro pelo ID
+
+DELETE http://localhost:8080/livros/{id} — deleta um livro pelo ID
+
+🏢 Editoras
+GET http://localhost:8080/editoras — lista todas as editoras
+
+POST http://localhost:8080/editoras — cria uma nova editora
+
+GET http://localhost:8080/editoras/{id} — (não aparece, mas você pode testar também)
+
+PUT http://localhost:8080/editoras/{id} — atualiza uma editora
+
+DELETE http://localhost:8080/editoras/{id} — deleta uma editora
 
 🧪 Testes
 Os endpoints da API foram testados com sucesso utilizando o Postman.
 
 ✅ Cadastro de livros
-
 ✅ Cadastro de editoras
-
 ✅ Listagem e busca de registros
-
 ✅ Relacionamento entre entidades funcionando corretamente
 
 ![image](https://github.com/user-attachments/assets/e52c42eb-c174-423e-8a8b-4b35bfb99ddc)
