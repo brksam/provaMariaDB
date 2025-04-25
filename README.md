@@ -29,8 +29,9 @@ Na classe `Livro`:
 @ManyToOne
 @JoinColumn(name = "editora_id")
 private Editora editora;
-Assim, cada livro fica associado a uma editora através da chave estrangeira editora_id.
 ```
+Assim, cada livro fica associado a uma editora através da chave estrangeira editora_id.
+
 🧪 Testes e Print
 >✅ Os testes foram realizados com sucesso via Postman.
 >✅ Endpoints funcionam corretamente.
