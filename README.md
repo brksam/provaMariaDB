@@ -60,17 +60,3 @@ Os endpoints da API foram testados com sucesso utilizando o Postman.
 ![image](https://github.com/user-attachments/assets/e52c42eb-c174-423e-8a8b-4b35bfb99ddc)
 ![image](https://github.com/user-attachments/assets/7d952ba8-c359-49ac-ad83-8ada0e7286f6)
 ![image](https://github.com/user-attachments/assets/417c2906-d75f-4f98-85e3-bc778d30f4a5)
-
-🚀 Como executar o projeto
-Inicie os serviços no XAMPP (Apache e MySQL).
-
-Acesse o phpMyAdmin e crie o banco de dados.
-
-Configure o application.properties conforme explicado acima.
-
-Execute o projeto com:
-
-./mvnw spring-boot:run
-ou
-mvn spring-boot:run
-
