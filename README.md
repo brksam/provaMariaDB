@@ -27,6 +27,7 @@ Foi implementado um relacionamento **Many-to-One** entre as entidades `Livro` e 
 // Na classe Livro.java
 @ManyToOne
 @JoinColumn(name = "editora_id")
+@JsonBackReference
 private Editora editora;
 ```
 Com essa anotação, cada livro armazena a chave estrangeira editora_id, representando a editora a que pertence.
