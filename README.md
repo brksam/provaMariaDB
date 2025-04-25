@@ -36,7 +36,7 @@ Com essa anotação, cada livro armazena a chave estrangeira editora_id, represe
 Certifique-se de que os serviços Apache e MySQL estejam ativos no XAMPP.
 
 No arquivo application.properties, configure o acesso ao banco de dados:
-
+```java
 spring.datasource.url=jdbc:mariadb://localhost:3306/nome_do_banco
 spring.datasource.username=root
 spring.datasource.password=
@@ -44,6 +44,7 @@ spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
+```
 
 💡 Substitua nome_do_banco pelo nome criado no phpMyAdmin.
 
